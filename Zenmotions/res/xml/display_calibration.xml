@@ -20,6 +20,18 @@
         android:title="@string/kcal_enabled_title"
         android:summary="@string/kcal_enabled_summary"
         android:persistent="false" />
+
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference
+        android:key="kcal_value"
+        android:title="@string/kcal_value"
+        android:dependency="kcal_enabled"
+        android:persistent="false"
+        android:layout="@layout/slider_preference"
+        android:recycleEnabled="false"
+        app:max_value="383"
+        app:min_value="128"
+        app:default_value="255"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_color_temp"
         android:title="@string/kcal_color_temp"        
@@ -30,6 +42,7 @@
         app:max_value="7000"
         app:min_value="1000"
         app:default_value="6400"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_red"
         android:title="@string/kcal_red"        
@@ -40,6 +53,7 @@
         app:max_value="256"
         app:min_value="0"
         app:default_value="256"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_green"
         android:title="@string/kcal_green"
@@ -50,6 +64,7 @@
         app:max_value="256"
         app:min_value="0"
         app:default_value="256"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_blue"
         android:title="@string/kcal_blue"
@@ -60,6 +75,7 @@
         app:max_value="256"
         app:min_value="0"
         app:default_value="256"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_contrast"
         android:title="@string/kcal_contrast"
@@ -70,6 +86,7 @@
         app:max_value="384"
         app:min_value="128"
         app:default_value="255"/>
+
     <com.asus.zenmotions.kcal.utils.SeekBarPreference
         android:key="kcal_saturation"
         android:title="@string/kcal_saturation"
@@ -81,6 +98,16 @@
         app:min_value="224"
         app:default_value="256"/>
 
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference
+        android:key="kcal_hue"
+        android:title="@string/kcal_hue"
+        android:dependency="kcal_enabled"
+        android:persistent="false"
+        android:layout="@layout/slider_preference"
+        android:recycleEnabled="false"
+        app:max_value="1536"
+        app:min_value="0"
+        app:default_value="0"/>
     <SwitchPreference
         android:key="kcal_greyscale"
         android:title="@string/kcal_greyscale_title"
