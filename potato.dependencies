@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository":  "PotatoDevices/kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660",
+    "branch": "baked-release"
+  },
+  {
+    "remote": "github",
+    "repository": "KudProject/proprietary_vendor_asus",
+    "target_path": "vendor/asus",
+    "branch": "pie"
+  }
+]
