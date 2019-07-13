@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "KudProject/proprietary_vendor_asus",
+    "repository": "bablusss/proprietary_vendor_asus",
     "target_path": "vendor/asus",
     "branch": "pie"
   }
