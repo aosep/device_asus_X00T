@@ -476,10 +476,10 @@
      <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
     <!-- Paths to the libraries that contain device specific key handlers -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/LineageActions/LineageActions.apk</string>
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/Zenmotions/Zenmotions.apk</string>
 
     <!-- Names of the key handler classes -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">org.lineageos.settings.device.KeyHandler</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.asus.zenmotions.KeyHandler</string>
 
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
