@@ -27,6 +27,7 @@ import com.asus.zenmotions.KernelControl;
 import com.asus.zenmotions.settings.ScreenOffGesture;
 import com.asus.zenmotions.util.Utils;
 import com.asus.zenmotions.gestures.SensorsDozeService;
+import com.asus.zenmotions.kcal.DisplayCalibration;
 import java.io.File;
 import android.support.v7.preference.PreferenceManager;
 
@@ -61,6 +62,7 @@ private void restore(String file, String value) {
                         ScreenOffGesture.PREF_GESTURE_ENABLE, true));
             }
 		context.startService(new Intent(context, SensorsDozeService.class));
+		context.startService(new Intent(context, DisplayCalibration.class));
     }
 
     private String getPreferenceString(Context context, String key, String defaultValue) {
