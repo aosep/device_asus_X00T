@@ -24,3 +24,6 @@
 
 # Gestures
 /sys/kernel/touchpanel(/.*)?         u:object_r:sysfs_gesture:s0
+
+#kcal
+/sys/devices/platform/kcal_ctrl.0(/.*)?   u:object_r:sysfs_kcal:s0
